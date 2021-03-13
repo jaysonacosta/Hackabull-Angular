@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'main-styles.scss';
+@import '../node_modules/bulma/bulma.sass';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left, #65E5C2, #68A3F5, #FC66F0);
+}

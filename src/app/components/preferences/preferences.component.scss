@@ -1,0 +1,28 @@
+.preferences-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-height: 800px;
+    max-width: 1200px;
+    border-radius: 20px;
+    background: white;
+}
+
+.entertainment {
+    flex: 1;
+    padding: 42px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        margin-bottom: 10px;
+    }
+}
+
+.food {
+    flex: 1;
+    padding: 42px;
+}

@@ -1,0 +1,31 @@
+<body>
+    
+    <div class="preferences-container">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Name">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Username" id="username-form">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-primary" [disabled]="formIsFull" routerLink="/preferences">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light" routerLink="/">Cancel</button>
+            </div>
+          </div>
+    </div>
+
+</body>
