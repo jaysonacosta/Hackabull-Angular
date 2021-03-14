@@ -240,10 +240,13 @@
     <div ng-sidebar-content>
 
         <div class="top-right-menu">
-            <button class="button is-primary" (click)="toggleSidebar()">Toggle sidebar</button>
+            <button class="button is-primary" (click)="toggleSidebar()" id="toggle-sidebar">Open Menu</button>
+            <button class="button is-link" id="preferences" routerLink="/preferences">Preferences</button>
+            <button class="button is-danger" id="logout" routerLink="/">Logout</button>
         </div>
         
-        <img src="../../../assets/nyc.jpg" alt="">
+        <app-map></app-map>
+        
 
     </div>
 

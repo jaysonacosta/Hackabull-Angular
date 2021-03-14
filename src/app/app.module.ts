@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PreferencesComponent } from './components/preferences/preferences.component';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     LoginComponent,
     PreferencesComponent,
     CreateAccountComponent,
-    DashboardComponent
+    DashboardComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
