@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  _opened = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleSidebar() {
+    this._opened = !this._opened;
+  }
+
 }
+
