@@ -11,8 +11,8 @@ export class MapComponent implements AfterViewInit {
   
   @ViewChild('mapcontainer', {static: false}) gmap: ElementRef;
   map: google.maps.Map;
-  lat = 40.730610;
-  lng = -73.935242;
+  lat = null;
+  lng = null;
 
   
 
@@ -25,7 +25,12 @@ export class MapComponent implements AfterViewInit {
 
   
 
-  constructor() { }
+  constructor() {
+    navigator.geolocation.getCurrentPosition( pos => {
+      this.lng = pos.coords.longitude;
+      this.lat = pos.coords.latitude;
+    });
+  }
 
   ngAfterViewInit() {
     this.mapInitializer();
