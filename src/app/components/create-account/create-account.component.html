@@ -1,41 +1,44 @@
 <body>
-    
-    <div class="preferences-container">
+     
+    <div class="create-account-container">
+        <form action="register.php" method="post">
         <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Name">
+            <input class="input" type="text" placeholder="Name" name="name">
             </div>
-          </div>
-          
-          <div class="field">
+        </div>
+        
+        <div class="field">
             <label class="label">Username</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input" type="text" placeholder="Username" id="username-form">
-              <span class="icon is-small is-left">
+            <input class="input" type="text" placeholder="Username" id="username-form" name="username">
+            <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
-              </span>
+            </span>
             </div>
-          </div>
+        </div>
 
-          <div class="field">
+        <div class="field">
             <label class="label">Password</label>
             <p class="control has-icons-left">
-              <input class="input" type="password" placeholder="Password">
-              <span class="icon is-small is-left">
+            <input class="input" type="password" placeholder="Password" name="password">
+            <span class="icon is-small is-left">
                 <i class="fas fa-lock"></i>
-              </span>
+            </span>
             </p>
-          </div>
-          
-          <div class="field is-grouped">
+        </div>
+        
+        <div class="field is-grouped">
             <div class="control">
-              <button class="button is-primary" [disabled]="false" routerLink="/preferences">Submit</button>
+            <button class="button is-primary" [disabled]="false" routerLink="/preferences">Submit</button>
             </div>
             <div class="control">
-              <button class="button is-link is-light" routerLink="/">Cancel</button>
+            <button class="button is-link is-light" routerLink="/">Cancel</button>
             </div>
-          </div>
+        </div>
+        </form>
     </div>
+    
 
 </body>
