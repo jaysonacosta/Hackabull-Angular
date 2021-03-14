@@ -17,10 +17,20 @@
               </span>
             </div>
           </div>
+
+          <div class="field">
+            <label class="label">Password</label>
+            <p class="control has-icons-left">
+              <input class="input" type="password" placeholder="Password">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
           
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-primary" [disabled]="formIsFull" routerLink="/preferences">Submit</button>
+              <button class="button is-primary" [disabled]="false" routerLink="/preferences">Submit</button>
             </div>
             <div class="control">
               <button class="button is-link is-light" routerLink="/">Cancel</button>

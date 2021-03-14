@@ -7,14 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAccountComponent implements OnInit {
 
-  formIsFull = true;
+  formIsFull = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  ngOnChanges() {
-  }
+  
 
 }
